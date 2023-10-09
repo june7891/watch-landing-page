@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    background-color: black;
+    background-image: url("/assets/images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 800px -100px;
+}
+
+h1, p {
+
+    color: white;
+}
+
+h1{
+    font-size: 5rem;
+}
+p{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.hero-text-container {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+button{
+    margin-top: 4rem;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+button:hover {
+
+color: black;
+border: none;
+background-color: white;
+}
+
+nav {
+    padding-top: 2rem;
+}
+
+.logo {
+    width: 220px;
+    padding-left: 50px;
+}
+.nav-link {
+    float: right;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-right: 50px;
+}
+
+.nav-link li {
+    list-style: none;
+    
+   
+}
+
+.menu {
+    display: none;
+    float: right;
+    padding-right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+    .hero {
+        background-position: 600px -50px;
+    }
+}
+@media (max-width: 991px) {
+    .hero {
+        background-position: 450px -50px;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    .nav-link {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+@media (max-width: 780px) {
+    .hero {
+        background-position: 250px -50px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hero-text-container{
+        top: 60%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    button {
+      margin-top: 20px;
+      padding: 5px 10px;
+    }
+    .hero {
+        background-position: center -100px;
+    }
+    
+}
+
+@media (max-width: 380px) {
+    .hero {
+        background-position: center -20px;
+    }
+}
